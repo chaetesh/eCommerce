@@ -21,7 +21,7 @@ const Login = (props) => {
             // save the authtoken and redirect
             localStorage.setItem('token',json.authtoken);
             props.setLoginSuccess(true);
-            navigate("/");
+            navigate("/ecommerce/");
             Notiflix.Notify.success('Login Succesfull');
           }
           else{
