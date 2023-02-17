@@ -91,7 +91,7 @@ function App() {
     <Router>
     <Navbar loginSuccess={loginSuccess}></Navbar>
     <Routes>
-      <Route exact path="/" element={<Home handler={handler}></Home>} />
+      <Route exact path="/ecommerce/" element={<Home handler={handler}></Home>} />
       <Route exact path="/About" element={<About></About>} />
       {/* use this state variable and update onlclick cards */}
       <Route exact path="/productDetail" element={<ProductDetail product={products[productId]} handler={handler} cart={cart} setCart={setCart} ></ProductDetail>} />
